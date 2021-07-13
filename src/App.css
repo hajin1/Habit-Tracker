@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 button {
   outline: none;
   border: 0;
@@ -42,4 +46,30 @@ button {
 .habit-delete {
   font-size: 2rem;
   color:darkred;
+}
+
+.navbar {
+  font-size: 2rem;
+  padding: 1em;
+  background-color:peachpuff;
+  font-weight: 500;
+}
+
+.navbar-logo {
+  color: green;
+  margin-right: 0.5em;;
+}
+
+.navbar-count {
+  margin-right: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-left: 0.2rem;
+  color: white;
+  border-radius: 50%;
+  background-color: green;
 }
