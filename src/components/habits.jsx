@@ -5,24 +5,23 @@ import Habit from './habit';
 class Habits extends Component {
     render() {
         return (
-            <>
-                <div className="habits">
-                    <ul>
-                        {
-                            this.props.habits.map(habit =>
-                                <Habit
-                                    key={habit.id}
-                                    habit={habit}
-                                    onIncrement={this.props.onIncrement}
-                                    onDecrement={this.props.onDecrement}
-                                    onDelete={this.props.onDelete}>
-                                </Habit>
-                            )
-                        }
-                    </ul>
-                </div>
+            <div className="habits">
+                <AddForm onAdd={this.props.onAdd} />
+                <ul>
+                    {
+                        this.props.habits.map(habit =>
+                            <Habit
+                                key={habit.id}
+                                habit={habit}
+                                onIncrement={this.props.onIncrement}
+                                onDecrement={this.props.onDecrement}
+                                onDelete={this.props.onDelete}>
+                            </Habit>
+                        )
+                    }
+                </ul>
                 <button className="habits-reset" onClick={this.props.onReset}>Reset All</button>
-            </>
+            </div>
         );
     }
 }
