@@ -1,6 +1,7 @@
 class HabitPresenter {
-    constructor(habits) {
+    constructor(habits, maxHabits) {
         this.habits = habits;
+        this.maxHabits = maxHabits;
     }
 
     getHabits() {
@@ -16,7 +17,8 @@ class HabitPresenter {
 
     decrement(habit, update) {
         this.habits = this.habits.map((item) => {
-            return (item.id === habit.id) ? { ...habit, count: (habit.count < 1) ? 0 : habit.count - 1 } : item;
+            const count = item.count - 1;
+            return (item.id === habit.id) ? { ...habit, count: (count < 0) ? 0 : count } : item;
         });
         update(this.habits);
     }
@@ -37,6 +39,9 @@ class HabitPresenter {
     }
 
     add(name, update) {
+        if (this.habits.length === this.maxHabits) {
+            throw new Error(`습관의 개수는 ${this.maxHabits}개 이상이 될 수 없습니다.`)
+        }
         this.habits = [...this.habits, { id: Date.now(), name, count: 0 }];
         update(this.habits);
     }
