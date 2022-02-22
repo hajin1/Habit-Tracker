@@ -6,7 +6,7 @@ class NavBar extends PureComponent {
             <nav className="navbar">
                 <i className="navbar-logo fas fa-leaf"></i>
                 <span>Habit Tracker</span>
-                <span className="navbar-count habit-count">{this.props.totalCount}</span>
+                <span className="navbar-count habit-count" data-testid="total-count">{this.props.totalCount}</span>
             </nav>
         );
     }
