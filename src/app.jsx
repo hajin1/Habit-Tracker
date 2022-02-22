@@ -1,7 +1,7 @@
 import './App.css';
-import Habits from './components/habits';
-import NavBar from './components/navBar';
 import React, { useState } from 'react';
+import Habits from './components/habits/habits';
+import NavBar from './components/navBar/navBar';
 const App = ({ presenter }) => {
   const [habits, setHabits] = useState(presenter.getHabits());
 
