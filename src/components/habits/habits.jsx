@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AddForm from './addForm';
-import Habit from './habit';
+import AddForm from '../form/addForm';
+import Habit from '../habit/habit';
 
 class Habits extends Component {
     render() {
@@ -20,7 +20,7 @@ class Habits extends Component {
                         )
                     }
                 </ul>
-                <button className="habits-reset" onClick={this.props.onReset}>Reset All</button>
+                <button title='reset' className="habits-reset" onClick={this.props.onReset}>Reset All</button>
             </div>
         );
     }
