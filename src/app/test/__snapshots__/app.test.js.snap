@@ -54,6 +54,7 @@ Array [
         </span>
         <button
           className="habit-button habit-increase"
+          data-testid="habit-increase"
           onClick={[Function]}
           title="increase"
         >
@@ -63,6 +64,7 @@ Array [
         </button>
         <button
           className="habit-button habit-decrease"
+          data-testid="habit-decrease"
           onClick={[Function]}
           title="decrease"
         >
@@ -72,6 +74,7 @@ Array [
         </button>
         <button
           className="habit-button habit-delete"
+          data-testid="habit-delete"
           onClick={[Function]}
           title="delete"
         >
@@ -97,6 +100,7 @@ Array [
         </span>
         <button
           className="habit-button habit-increase"
+          data-testid="habit-increase"
           onClick={[Function]}
           title="increase"
         >
@@ -106,6 +110,7 @@ Array [
         </button>
         <button
           className="habit-button habit-decrease"
+          data-testid="habit-decrease"
           onClick={[Function]}
           title="decrease"
         >
@@ -115,6 +120,7 @@ Array [
         </button>
         <button
           className="habit-button habit-delete"
+          data-testid="habit-delete"
           onClick={[Function]}
           title="delete"
         >
@@ -140,6 +146,7 @@ Array [
         </span>
         <button
           className="habit-button habit-increase"
+          data-testid="habit-increase"
           onClick={[Function]}
           title="increase"
         >
@@ -149,6 +156,7 @@ Array [
         </button>
         <button
           className="habit-button habit-decrease"
+          data-testid="habit-decrease"
           onClick={[Function]}
           title="decrease"
         >
@@ -158,6 +166,7 @@ Array [
         </button>
         <button
           className="habit-button habit-delete"
+          data-testid="habit-delete"
           onClick={[Function]}
           title="delete"
         >

@@ -37,6 +37,7 @@ exports[`Habits component renders 1`] = `
       </span>
       <button
         className="habit-button habit-increase"
+        data-testid="habit-increase"
         onClick={[Function]}
         title="increase"
       >
@@ -46,6 +47,7 @@ exports[`Habits component renders 1`] = `
       </button>
       <button
         className="habit-button habit-decrease"
+        data-testid="habit-decrease"
         onClick={[Function]}
         title="decrease"
       >
@@ -55,6 +57,7 @@ exports[`Habits component renders 1`] = `
       </button>
       <button
         className="habit-button habit-delete"
+        data-testid="habit-delete"
         onClick={[Function]}
         title="delete"
       >
@@ -80,6 +83,7 @@ exports[`Habits component renders 1`] = `
       </span>
       <button
         className="habit-button habit-increase"
+        data-testid="habit-increase"
         onClick={[Function]}
         title="increase"
       >
@@ -89,6 +93,7 @@ exports[`Habits component renders 1`] = `
       </button>
       <button
         className="habit-button habit-decrease"
+        data-testid="habit-decrease"
         onClick={[Function]}
         title="decrease"
       >
@@ -98,6 +103,7 @@ exports[`Habits component renders 1`] = `
       </button>
       <button
         className="habit-button habit-delete"
+        data-testid="habit-delete"
         onClick={[Function]}
         title="delete"
       >
@@ -123,6 +129,7 @@ exports[`Habits component renders 1`] = `
       </span>
       <button
         className="habit-button habit-increase"
+        data-testid="habit-increase"
         onClick={[Function]}
         title="increase"
       >
@@ -132,6 +139,7 @@ exports[`Habits component renders 1`] = `
       </button>
       <button
         className="habit-button habit-decrease"
+        data-testid="habit-decrease"
         onClick={[Function]}
         title="decrease"
       >
@@ -141,6 +149,7 @@ exports[`Habits component renders 1`] = `
       </button>
       <button
         className="habit-button habit-delete"
+        data-testid="habit-delete"
         onClick={[Function]}
         title="delete"
       >
